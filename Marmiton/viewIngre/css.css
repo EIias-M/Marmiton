@@ -1,0 +1,135 @@
+#nom {float:left; color : red; font-size : 150%; font-weight: bold; }
+#rech {padding-left : 35%;float:left;}
+#incrire { float:right; font-size : 150%;}
+#menu{
+	  padding : 1em;
+  width: 100%;
+  height: 200px;
+  box-sizing: border-box;
+
+  /* La couche la plus basse sera
+     peinte avec un gris clair uni */
+  background-color: #E4E4D9;
+
+  /* Ensuite on applique des gradients
+     linéaires les uns sur les autres
+     pour créer un effet de bandes colorées.
+     Comme vous pouvez le voir, les gradients
+     sont considérés et manipulés comme des
+     images */
+  background-image: linear-gradient(175deg, rgba(0,0,0,0) 95%, #8da389 95%),
+                    linear-gradient( 85deg, rgba(0,0,0,0) 95%, #8da389 95%),
+                    linear-gradient(175deg, rgba(0,0,0,0) 90%, #b4b07f 90%),
+                    linear-gradient( 85deg, rgba(0,0,0,0) 92%, #b4b07f 92%),
+                    linear-gradient(175deg, rgba(0,0,0,0) 85%, #c5a68e 85%),
+                    linear-gradient( 85deg, rgba(0,0,0,0) 89%, #c5a68e 89%),
+                    linear-gradient(175deg, rgba(0,0,0,0) 80%, #ba9499 80%),
+                    linear-gradient( 85deg, rgba(0,0,0,0) 86%, #ba9499 86%),
+                    linear-gradient(175deg, rgba(0,0,0,0) 75%, #9f8fa4 75%),
+                    linear-gradient( 85deg, rgba(0,0,0,0) 83%, #9f8fa4 83%),
+                    linear-gradient(175deg, rgba(0,0,0,0) 70%, #74a6ae 70%),
+                    linear-gradient( 85deg, rgba(0,0,0,0) 80%, #74a6ae 80%);
+
+	
+	
+	
+	
+	} 
+
+#corps{ 
+	margin-left: 25%; 
+	/*margin-right: 25%; 
+	border:1px ridge black;*/
+	float: center;
+
+} 
+
+
+h1{
+	text-align: center;
+	float:none;
+	margin-top:15px;
+	color:red;
+}
+
+
+table{
+	 border: 1px solid black;
+	 float : left;
+}
+
+
+
+
+li{
+	list-style-type: none;
+	text-align:right;
+	top:0;
+}
+
+.abon{
+	float:right;
+	list-style-type: none;
+	text-decoration:none; 
+	border:1px ridge black;
+	border-radius: 10px;
+	padding:3px;
+	background-color: white;
+	color:red;
+}
+
+.nom{
+	
+	text-align:left;
+	margin-block-end: 0;
+	color: yellow;
+	margin-top:4px;
+
+}
+form{
+	width:auto; 
+	float: left;
+	height : auto;
+}
+
+
+.rech{
+	
+	width: 600px;
+}
+
+
+.doc{
+	float: left;
+    width: 250px;
+    height: 110px;
+    text-align: justify;
+    border: 1px solid black;
+    overflow: auto;
+}
+
+img{
+	width: 240px;
+	height: auto;
+}
+
+@media (max-width: 812px) {
+	#rech {padding-left : 10px;float:left;}
+	
+	
+	#nom { font-size : 110%; }
+	#incrire {font-size : 110%;}
+	
+	.rech{
+	
+	width: 200px;
+}
+	
+	#menu{
+		display: flex;
+        flex-direction: row;
+     }
+	#nom :nth-child(1) { order: 1; }
+	#rech :nth-child(2) { order: 3; }
+	#incrire :nth-child(3) { order: 2; }
+}
